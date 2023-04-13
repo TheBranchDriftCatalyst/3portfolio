@@ -9,4 +9,4 @@ RUN yarn install
 RUN yarn build
 
 
-CMD ["npm", "run", "dev"]
+#CMD ["npm", "run", "dev"]
