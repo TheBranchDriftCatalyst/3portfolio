@@ -1,0 +1,199 @@
+basics:
+  name: DJ Daniels
+  label: Software Developer
+  picture: ''
+  email: djdanielsh@knowledgedump.space
+  phone: (858)-229-7304
+  website: blog.knowledgedump.space
+  summary: An avid technologist with experience in frontend and backend technologies.
+  location:
+    address: 985 Albion St, Apt 222
+    postalCode: '80220'
+    city: Denver, US
+    countryCode: US
+    region: CO
+    name: Denver, US
+  profiles:
+    - network: github
+      username: djdaniels90
+      url: ''
+    - network: linkedin
+      username: hdaniels90
+      url: ''
+work:
+  - name: YMCA
+    position: Lifeguard/Swim Instructor
+    website: ''
+    startDate: "1/2005"
+    endDate: "12/2013"
+    summary: |-
+      Responsible for maintaining up-to-date certifications: Certified Lifeguard
+      and Swim Instructor, CPR for the Professional Rescuer, Blood Borne
+      Pathogens Training, AED Essential, and First Aid for Public Safety Personnel
+    highlights: []
+    stillEmployed: false
+    location: San Diego
+    icon: resume/ymca_logo.svg
+  - name: Airwave Networks
+    position: On-site Representative (PCO)
+    website: ''
+    startDate: "12/2010"
+    endDate: "12/2012"
+    summary: ''
+    highlights:
+      - Managed technical infrastructure for 700+ unit apartment complex as the sole onsite
+        representative
+      - Installed, serviced and tested cable infrastructure for data and television
+      - Interacted with customers and prospects to expediently resolve issues in a professional
+        manner
+    stillEmployed: false
+    location: Eugene, Oregon
+    icon: resume/airwave_networks_logo.svg
+  - name: Ampush Media
+    position: Software Engineer II
+    website: ''
+    startDate: "11/2014"
+    endDate: "05/2019"
+    summary: ''
+    highlights:
+      - Helped construct a multimillion dollar enterprise application from inception to completion
+      - Utilized multiple of frameworks (angular + react) to create complex analytics dashboards for tracking and reporting in advertisement campaigns across multiple platforms
+      - Awarded facebook's Strategic Preferred Marketing Developer 2013
+    stillEmployed: false
+    location: San Francisco
+    icon: resume/ampush_logo.svg
+  - name: MakerSquare
+    position: Teacher
+    website: https://www.hackreactor.com/
+    startDate: "09/2014"
+    endDate: "11/2014"
+    summary: ''
+    highlights:
+      - Awarded 'Teacher of the Month'
+    icon: resume/makersquare_logo.svg
+  - name: Upstart
+    position: L4 Software Engineer
+    website: ''
+    startDate: "6/2019"
+    endDate: "2/2023"
+    summary: ''
+    highlights:
+      - Familiar with SDLC processes in a complex compliance environment. SOC1&2, SOX, Agile
+      - Handled complex refactors of monolithic code and domain model to allow for enterprise scaling and an internal platforms as a service model
+      - Debugged complex issues in a 'chaos engineering' software ecosystem
+      - Technical Design and Architecture for multiple projects and teams. Including automatic id verification service and a monolithic domain refactor.
+    place:
+      name: San Mateo
+    stillEmployed: false
+    location: San Mateo
+    icon: resume/upstart_logo.svg
+volunteer:
+education:
+  - institution: University of Oregon
+    area: "Political Science/Computer Science"
+    studyType: "BS"
+    startDate: "09/2008"
+    endDate: "12/2013"
+    gpa: ''
+    courses:
+      - Advanced Business Systems 281
+      - Computer Architecture 314
+      - Computer Science I, II, III
+      - Digital Info Processing
+      - Discrete Math
+      - Intermediate Data Structures
+      - Programming and Algorithms
+      - Scientific and Technical Writing
+      - Web Programming
+    icon: resume/uoregon_logo.svg
+  - institution: MakerSquare (HackReactor)
+    area: Web Development
+    studyType: '3 Months'
+    startDate: "06/2014"
+    endDate: "09/2014"
+    gpa: ''
+    courses:
+      - Three month web design and coding intensive in San Francisco
+    icon: resume/makersquare_logo.svg
+awards:
+  - title: Eagle Scout
+    date: "01/2006"
+    awarder: BSA
+    summary: Elected to the Boy Scout of America Order of the Arrow
+publications: [ ]
+skills:
+  - name: Kubernetes
+    level: 25
+    keywords:
+      - Kafka
+      - AWS
+      - Docker
+      - infrastructure as code
+  - name: Kotlin
+    level: 15
+  - name: Kafka
+    level: 20
+  - name: Docker
+    level: 90
+  - name: Frontend
+    level: 100
+    keywords:
+      - React
+      - Typescript
+      - Node
+      - Express
+  - name: backend
+    level: 80
+    keywords:
+      - Python
+      - Ruby
+  - name: Project Management
+    level: 80
+    keywords:
+      - Agile
+      - Scrum
+      - Kanban
+      - Jira
+      - Sheets/Excel
+  - name: Technical Design
+    level: 80
+    keywords:
+      - UML/Puml
+      - Data Modeling
+languages:
+  - language: Typescript
+    fluency: 100
+  - language: Python
+    fluency: 90
+  - language: Bash/Shell
+    fluency: 75
+  - language: Ruby
+    fluency: 90
+  - language: Kotlin
+    fluency: 20
+  - language: Java
+    fluency: 50
+  - language: SASS/CSS
+    fluency: 80
+
+
+interests:
+  - name: Futurism
+    keywords:
+      - Crypto Currency
+      - AI
+      - Bio Tech
+      - Space
+  - name: Reading
+    keywords:
+      - Science Fiction
+      - Fantasy
+      - Politics
+      - Business
+references:
+  - name: Brien Givens
+    reference: ''
+  - name: Brian Mascmarenes
+    reference: ''
+  - name: Navid Dena
+    reference: ''
