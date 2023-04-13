@@ -7,12 +7,12 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   plugins: [react(), ViteYaml(), tsconfigPaths()],
   base: "/portfolio/",
-  server: {
-    watch: {
-      usePolling: true,
-    },
-    host: true, // needed for the Docker Container port mapping to work
-    strictPort: true,
-    port: 8080,
-  }
+  // server: {
+  //   watch: {
+  //     usePolling: true,
+  //   },
+    // host: true, // needed for the Docker Container port mapping to work
+    // strictPort: true,
+    // port: 8080,
+  // }
 })
