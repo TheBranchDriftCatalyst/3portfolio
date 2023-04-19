@@ -15,10 +15,10 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  // meta,
+  // starbucks,
+  // tesla,
+  // shopify,
   carrent,
   jobit,
   tripguide,
@@ -28,6 +28,8 @@ import {
 
 import jsonResumeData from './resume.yml'
 import {DateTime} from "luxon";
+
+export const jsonResume = jsonResumeData;
 
 export const navLinks = [
   {
@@ -63,60 +65,73 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+const jsonResumeSkillsMapper = (skills) => {
+
+  return skills.map(({name, level, keywords}) => ({
+    name,
+    // TODO: add the icons later
+    icon: null,
+    level,
+    keywords
+  }))
+}
+
+const technologies = jsonResumeSkillsMapper(jsonResumeData.skills)
+
+// const technologies = [
+//   {
+//     name: "HTML 5",
+//     icon: html,
+//   },
+//   {
+//     name: "CSS 3",
+//     icon: css,
+//   },
+//   {
+//     name: "JavaScript",
+//     icon: javascript,
+//   },
+//   {
+//     name: "TypeScript",
+//     icon: typescript,
+//   },
+//   {
+//     name: "React JS",
+//     icon: reactjs,
+//   },
+//   {
+//     name: "Redux Toolkit",
+//     icon: redux,
+//   },
+//   {
+//     name: "Tailwind CSS",
+//     icon: tailwind,
+//   },
+//   {
+//     name: "Node JS",
+//     icon: nodejs,
+//   },
+//   {
+//     name: "MongoDB",
+//     icon: mongodb,
+//   },
+//   {
+//     name: "Three JS",
+//     icon: threejs,
+//   },
+//   {
+//     name: "git",
+//     icon: git,
+//   },
+//   {
+//     name: "figma",
+//     icon: figma,
+//   },
+//   {
+//     name: "docker",
+//     icon: docker,
+//   },
+// ];
 
 const formatDate = (date) => {
   DateTime.fromFormat(date, 'mm/yyyy')

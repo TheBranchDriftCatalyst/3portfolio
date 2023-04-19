@@ -6,6 +6,7 @@ basics:
   phone: (858)-229-7304
   website: blog.knowledgedump.space
   summary: An avid technologist with experience in frontend and backend technologies.
+  description:
   location:
     address: 985 Albion St, Apt 222
     postalCode: '80220'
@@ -69,7 +70,7 @@ work:
     endDate: "11/2014"
     summary: ''
     highlights:
-      - Awarded 'Teacher of the Month'
+      - Teacher internship for Makersquare cohort.
     icon: resume/makersquare_logo.svg
   - name: Upstart
     position: L4 Software Engineer
@@ -175,8 +176,6 @@ languages:
     fluency: 50
   - language: SASS/CSS
     fluency: 80
-
-
 interests:
   - name: Futurism
     keywords:
@@ -193,7 +192,12 @@ interests:
 references:
   - name: Brien Givens
     reference: ''
-  - name: Brian Mascmarenes
+  - name: Brian Mascarenes
     reference: ''
   - name: Navid Dena
     reference: ''
+projects:
+  name:
+  summary:
+  github:
+

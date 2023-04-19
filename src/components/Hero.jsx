@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
-import resumeData from "../constants/resume.yml";
+import { jsonResume } from "../constants";
 
 const Hero = () => {
   return (
@@ -18,12 +18,10 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>{resumeData.name}</span>
+            Hi, I'm <span className='text-[#915EFF]'>{jsonResume.basics.name}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {resumeData.summary}
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            {jsonResume.basics.summary}
           </p>
         </div>
       </div>
