@@ -20,8 +20,8 @@ export {
   Feedbacks,
   Contact,
   CanvasLoader,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
   StarsCanvas
 };
