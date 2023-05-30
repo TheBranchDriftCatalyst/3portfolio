@@ -1,15 +1,10 @@
 //  NOTE: THis is the interface between the old pattern (fork base) and the new json-resume patterns.  Eventually this
-//  should all be removed such that everything can be loaded from the resume assets folder/module instead. THis will
-// allow creating three repos
-//   - catalyst theme (traditional resume
-//   - portfolio (three js portfolio)
-//   - resume assets (private assets for resume)
+//  should all be removed such that everything can be loaded from the resume assets folder/module instead.
 
 import _JsonResume from 'resume-assets/data/resume.yml'
 import _Projects from 'resume-assets/data/projects.yml'
 import JsonResume from './resume.d'
 import {DateTime} from "luxon";
-
 
 export const jsonResume = _JsonResume as JsonResume
 
