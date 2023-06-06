@@ -1,14 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
+import TextTransition, {presets} from 'react-text-transition';
 
-import { styles } from "../styles";
-import { navLinks } from "../constants/index";
-import { logo, menu, close } from "../assets";
+import {styles} from "../styles";
+import {navLinks, descriptors} from "../constants/index";
+import {logo, menu, close} from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [descriptorIndex, setIndex] = React.useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((descriptorIndex) => descriptorIndex + 1),
+      5000, // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,11 +52,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            DJ &nbsp;
-            <span className='sm:block hidden'> | Dynamic Developer</span>
-          </p>
+          <img src={logo} alt='logo' className='w-9 h-9 object-contain'/>
+          <div className='text-white text-[18px] font-bold cursor-pointer flex '>
+            <span>DJ &nbsp; | &nbsp;</span>
+            <TextTransition springConfig={presets.wobbly}>{descriptors[descriptorIndex % descriptors.length]}</TextTransition>
+          </div>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -58,7 +68,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`${nav.url}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -88,7 +98,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`${nav.url}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>

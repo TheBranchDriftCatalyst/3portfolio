@@ -11,17 +11,48 @@ export const jsonResume = _JsonResume as JsonResume
 export const navLinks = [
   {
     id: "about",
+    url: "#about",
     title: "About",
   },
   {
     id: "work",
+    url: "#work",
     title: "Work",
   },
   {
     id: "contact",
+    url: "#contact",
     title: "Contact",
   },
+  {
+    id: 'resume',
+    url: '/resume.html',
+    title: 'Resume'
+  }
 ];
+
+export const descriptors = [
+  'Harmonious Algorithm',
+  'Techno Serenade',
+  'Code Conductor',
+  'Cyber Symphony',
+  'Virtual Vanguard',
+  'Logic Maestro',
+  'Digital Luminary',
+  'Data Whisperer',
+  'Byte Emperor',
+  'Algorithmic Aether',
+  'Software Sorcerer',
+  'Engineering Nexus',
+  'Code Alchemist',
+  'Cybernetic Maestro',
+  'Software Paragon',
+  'Techno Architect',
+  'Engineering Virtuoso',
+  'Digital Maestro',
+  'Software Luminary',
+  'Technological Enigma'
+]
 
 const jsonResumeSkillsToServicesMapper = (skills: JsonResume['skills']) => {
   return skills.map(({name, level, keywords}) => ({
@@ -134,8 +165,8 @@ const jsonResumeEducationExperienceMapper = (a: JsonResume['education']) => {
 }
 
 const experiences = [
-    ...jsonResumeWorkExperienceMapper(jsonResume.work),
-    ...jsonResumeEducationExperienceMapper(jsonResume.education),
+  ...jsonResumeWorkExperienceMapper(jsonResume.work),
+  ...jsonResumeEducationExperienceMapper(jsonResume.education),
 ];
 
 const testimonials = [
