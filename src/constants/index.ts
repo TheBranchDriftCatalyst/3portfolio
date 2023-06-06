@@ -1,8 +1,8 @@
 //  NOTE: THis is the interface between the old pattern (fork base) and the new json-resume patterns.  Eventually this
 //  should all be removed such that everything can be loaded from the resume assets folder/module instead.
 
-import _JsonResume from 'resume-assets/data/resume.yml'
-import _Projects from 'resume-assets/data/projects.yml'
+import _JsonResume from '../../../../resume-assets/data/resume.yml'
+import _Projects from '../../../../resume-assets/data/projects.yml'
 import JsonResume from './resume.d'
 import {DateTime} from "luxon";
 
