@@ -25,9 +25,9 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center w-full h-full p-2'>
           <img
-            src={experience.icon}
+            src={'resume/' + experience.icon}
             alt={experience.company_name}
             className='w-[60%] h-[60%] object-contain'
           />
@@ -44,11 +44,11 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='list-outside list-disc'>
         {experience.points.map((highlight: string, index: number) => (
           <li
             key={`experience-highlight-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className='text-white-100 text-[14px] mt-2 list-disc tracking-wider marker:text-red-800'
           >
             {highlight}
           </li>
